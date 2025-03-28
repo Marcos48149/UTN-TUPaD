@@ -1,0 +1,125 @@
+Actividades
+1 Contestar las siguientes preguntas utilizando las guías y documentación proporcionada (Desarrollar las respuestas) : 
+
+• ¿Qué es GitHub? 
+GitHub es una plataforma de alojamiento de código fuente que usa Git como sistema de control de versiones. Permite a los desarrolladores almacenar sus proyectos, colaborar con otros, hacer revisiones de código, y gestionar el desarrollo de proyectos de manera eficiente.
+
+¿Cómo crear un repositorio en GitHub? 
+Accede a GitHub.
+En la esquina superior derecha, haz clic en el ícono de  (+) y selecciona "Nuevo repositorio".
+Ingresar un nombre para el repositorio.
+Decidir si el repositorio será público o privado.
+Clic en "Crear repositorio".
+
+¿Cómo crear una rama en Git?
+git branch nombre-de-la-rama
+
+
+¿Cómo cambiar a una rama en Git?
+git checkout nombre-de-la-rama
+
+¿Cómo fusionar ramas en Git?
+git checkout rama-de-destino
+git merge rama-a-fusionar
+
+¿Cómo crear un commit en Git?
+git add .
+git commit -m "Mensaje del commit"
+
+¿Cómo enviar un commit a GitHub?
+git push origin nombre-de-la-rama
+
+¿Qué es un repositorio remoto?
+Un repositorio remoto es una versión del repositorio que se encuentra almacenada en un servidor o en una plataforma como GitHub. Permite la colaboración entre desarrolladores y el acceso a versiones del código de manera remota.
+
+¿Cómo agregar un repositorio remoto a Git?
+git remote add origin https://github.com/usuario/repositorio.git
+
+
+¿Cómo empujar cambios a un repositorio remoto?
+git push origin nombre-de-la-rama
+
+¿Cómo tirar de cambios de un repositorio remoto?
+git pull origin nombre-de-la-rama
+
+
+¿Qué es un fork de repositorio?
+Un fork es una copia de un repositorio de otro usuario. Esto permite hacer cambios y experimentos sin afectar el repositorio original. 
+
+¿Cómo crear un fork de un repositorio?
+1.	Ir al repositorio que quieres forkear en GitHub.
+2.	clic en el botón "Fork" en la parte superior derecha.
+3.	Selecciona tu cuenta.
+4.	Después clonarlo en la máquina y trabajar en él.
+
+¿Cómo enviar una solicitud de extracción (pull request) a un repositorio?
+1.	Empuja tus cambios a tu fork en GitHub.
+2.	Ir al repositorio original en GitHub y haz clic en "New Pull Request".
+3.	Seleccionar la rama con los cambios y comparar con la rama base del repositorio original
+4.	Agregar una descripción de lo que se ha cambiado y hacer clic en "Create Pull Request".
+
+¿Cómo aceptar una solicitud de extracción?
+1.	En el repositorio en GitHub, ir a la pestaña "Pull Requests".
+2.	Hacer clic en la solicitud de extracción que deseas revisar.
+3.	Revisa los cambios y, si todo está bien, haz clic en el botón "Merge pull request".
+4.	confirmar haciendo clic en "Confirm merge".
+
+¿Qué es una etiqueta en Git?
+Una etiqueta (tag) en Git es una referencia que se utiliza para marcar puntos específicos en el historial del repositorio, como una versión estable o una versión de lanzamiento.
+
+¿Cómo crear una etiqueta en Git?
+git tag nombre-de-etiqueta
+o
+git tag -a nombre-de-etiqueta -m "Mensaje descriptivo"
+
+¿Cómo enviar una etiqueta a GitHub?
+git push origin nombre-de-etiqueta
+ enviar todas las etiquetas a la vez:
+git push --tags
+
+¿Qué es un historial de Git?
+El historial de Git es una secuencia de registros (commits) que muestra todos los cambios realizados en el repositorio a lo largo del tiempo. Puedes ver cómo ha evolucionado el proyecto y revertir a versiones anteriores si es necesario.
+
+¿Cómo ver el historial de Git?
+git log
+Este comando muestra una lista de todos los commits realizados en el repositorio, con su hash, autor y mensaje de commit.
+
+¿Cómo buscar en el historial de Git?
+Puedes buscar en el historial de Git usando el comando git log con opciones adicionales. 
+git log --grep="mensaje de búsqueda"
+Esto buscará los commits que contengan el mensaje específico
+
+¿Cómo borrar el historial de Git?
+Para borrar el historial de Git, puedes usar comandos como git rebase o git reset.
+git reset --hard <commit-id>
+Tener en cuenta que este tipo de acción puede sobrescribir cambios importantes y no es reversible.
+
+¿Qué es un repositorio privado en GitHub?
+Un repositorio privado en GitHub es un repositorio cuyo contenido solo es accesible para las personas a quienes se les ha dado acceso explícito. No es visible para el público en general.
+
+¿Cómo crear un repositorio privado en GitHub?
+1.	Ve a tu página principal en GitHub y haz clic en el botón "Nuevo".
+2.	Completa los detalles del repositorio, como nombre y descripción.
+3.	Bajo la opción "Visibilidad", selecciona "Privado".
+4.	Haz clic en "Crear repositorio".
+
+¿Cómo invitar a alguien a un repositorio privado en GitHub?
+1.	Ir al repositorio privado en GitHub.
+2.	Haz clic en "Settings" (Configuración) en la parte superior del repositorio.
+3.	En el menú lateral izquierdo, selecciona "Manage access".
+4.	Haz clic en "Invite a collaborator".
+5.	Ingresa el nombre de usuario de la persona que deseas invitar y selecciona "Add".
+
+¿Qué es un repositorio público en GitHub?
+Un repositorio público es un repositorio cuyo contenido es accesible para cualquier persona en la web. No necesita ser invitado para ver ni colaborar en el repositorio.
+
+¿Cómo crear un repositorio público en GitHub?
+1.	Ve a tu página principal en GitHub y haz clic en el botón "Nuevo".
+2.	Completa los detalles del repositorio, como nombre y descripción.
+3.	Bajo la opción "Visibilidad", selecciona "Público".
+4.	Haz clic en "Crear repositorio".
+
+¿Cómo compartir un repositorio público en GitHub?
+Para compartir un repositorio público, solo necesitas enviar el enlace al repositorio. El enlace tendrá esta estructura:
+https://github.com/usuario/nombre-del-repositorio
+
